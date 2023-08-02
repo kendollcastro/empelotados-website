@@ -1,0 +1,51 @@
+html {
+  touch-action: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll; /* añade desplazamiento vertical */
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: $primary-color;
+}
+
+.max-container {
+  max-width: 1280px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  @include from(m_tablet) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.heading__content {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.iframe-general-top {
+  border: none;
+  width: 99.99%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $third-color;
+  // outline: 1px solid slategrey;
+}
+
+b,
+strong {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 24px;
+}

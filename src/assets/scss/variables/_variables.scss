@@ -1,0 +1,78 @@
+$primary-color    : #5C0F8B;
+$secondary-color  : #270089;
+$third-color      : #623AAC;
+$fouth-color      : #210E83;
+$fifth-color      : #570d8a;
+$sixth-color      : #FFFFFF;
+$seventh-color    : #5C0F8B;
+$eighth-color     : #400a60;
+$ninth-color      : #1d0164;
+$tenth-color      : #d0d9e7;
+$eleventh-color   : #220672;
+$twelfth-color    : #1F1560;
+$thirteenth-color : #210E83;
+$fourteenth-color : #bea4ff;
+$fifteenth-color  : #2d0289;
+$sixteenth-color  : #dbedff;
+$seventeenth-color: #292f3f;
+$eighteenth-color : #15004a;
+$nineteenth-color : #880E4A;
+
+$bg-main-color    : $eighth-color;
+$bg-second-color  : $fifteenth-color;
+$bg-third-color   : $tenth-color;
+$bg-fourth-color  : $seventh-color;
+$bg-fifth-color   : $eleventh-color;
+
+/* Text Colors */
+$primary-text-color   :  $sixth-color;
+$secondary-text-color :  $fifth-color;
+$third-text-color     :  $third-color;
+$fourth-text-color    :  $secondary-color;
+$fifth-text-color     :  $eighth-color;
+
+/* Header Styles */
+$header-mobile-bg-color    :  $fifth-color;
+$header-desktop-bg-color   :  linear-gradient(to bottom, #270089, #5c0f8b);
+$header-text-color         :  $tenth-color ;
+
+
+/* Buttons styles */
+$primary-btn-bg   : $secondary-color;
+$seconday-btn-bg  : $eighth-color;
+
+/* Font Family */
+$primary-font     : 'Kanit', sans-serif;
+
+/* Font Sizes */
+
+/* H1 */
+$h1-mobile  : 35px;
+$h1-desktop : 60px; 
+
+/* H2 */
+$h2-mobile  : 19px; 
+$h2-desktop : 45px;
+
+/* Paragraph */
+$primary-paragraph: 18px; 
+$secondary-paragraph: 24px;
+
+/* Subtitle */
+$subtitle-mobile  : 25px;
+$subttitle-desktop: 50px;
+
+/* Breakpoints */
+$breakpoints:
+(
+  s_phone   : 0,
+  m_phone   : 425px,
+  xs_tablet : 670px,
+  s_tablet  : 744px,
+  m_tablet  : 834px,
+  l_tablet  : 940px,
+  s_desktop : 1024px,
+  l_desktop : 1100px,
+  m_desktop : 1440px
+);
+

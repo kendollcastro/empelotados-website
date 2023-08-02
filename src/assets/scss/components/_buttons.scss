@@ -1,0 +1,128 @@
+.primary-button {
+  color: $primary-text-color;
+  padding: 8px;
+  font-weight: normal;
+  border-radius: 4px;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  transition: 0.1s ease-in;
+  border: none;
+
+  &__classic {
+    background-color: $secondary-color;
+    padding: 8px 10px;
+
+    @include from(s_desktop) {
+      &:hover {
+        background-color: $ninth-color;
+      }
+    }
+  }
+
+  &__register {
+    background-color: $seventh-color;
+    padding: 8px 10px;
+
+    @include from(s_desktop) {
+      &:hover {
+        background-color: $eighth-color;
+      }
+    }
+  }
+
+  &__games {
+    background-color: $third-color;
+    border: 1px solid $fifth-color;
+    color: $fifteenth-color;
+    max-width: 228px;
+    font-weight: bold;
+    font-size: 18px;
+
+    @include from(s_desktop) {
+      font-size: 28px;
+      padding: 8px 80px;
+      width: 100%;
+      max-width: fit-content;
+
+      &:hover {
+        background-color: $eighteenth-color;
+        color: $primary-text-color;
+      }
+    }
+  }
+}
+
+.secondary-button {
+  color: $secondary-text-color;
+  display: flex;
+  padding: 8px;
+  font-weight: normal;
+  border-radius: 4px;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  transition: 0.1s ease-in;
+  font-size: 11px;
+  width: 78px;
+
+  @media (min-width: 600px) {
+    font-size: 9px;
+  }
+
+  &__betslip {
+    background-color: $bg-fourth-color;
+    border: none;
+
+    @include from(s_desktop) {
+      font-size: 15px;
+      padding: 5px 8px;
+      width: fit-content;
+
+      &:hover {
+        background-color: $eighteenth-color;
+        color: $seventh-color;
+      }
+    }
+  }
+
+  &__register {
+    background-color: $ninth-color;
+
+    @include from(s_desktop) {
+      font-size: 15px;
+      padding: 5px 8px;
+
+      &:hover {
+        background-color: $seventh-color;
+        color: $primary-text-color;
+      }
+    }
+  }
+
+  &__login {
+    background-color: $bg-fourth-color;
+    border: unset;
+    width: 100%;
+    color: $primary-text-color;
+    font-size: 14px;
+    text-transform: none;
+    &:hover {
+      background-color: $seventh-color;
+    }
+  }
+
+  &__register-secondary {
+    background-color: $eighteenth-color;
+    color: $primary-text-color;
+    width: 235px;
+    margin-right: 0;
+    font-size: 14px;
+    margin-top: 13px;
+
+    @include from(s_desktop) {
+      width: 384px;
+    }
+  }
+}

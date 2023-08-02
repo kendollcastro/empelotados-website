@@ -1,0 +1,79 @@
+.games-cards {
+  background-color: $twelfth-color;
+  padding: 100px 16px;
+  display: block;
+
+  &__container {
+    display: flex;
+    // flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1565px;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 48px;
+
+    @include from(s_desktop) {
+      flex-direction: row;
+    }
+
+    &--card {
+      width: 100%;
+      border-radius: 5px;
+      transition: box-shadow 0.3s ease-in-out;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+
+      @include from(s_tablet) {
+        max-width: 385px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      h3 {
+        color: $sixth-color;
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+
+    &--card:hover {
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Añadimos transiciones para la opacidad y escala del botón */
+      transform: scale(1.1); /* Reducimos la escala del botón para que aparezca más suave */
+    }
+    
+    &--card-btn {
+      // display: none;
+      position: absolute; 
+      left: 0; 
+      right: 0; 
+      top: 50%;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 100px;
+      background-image: linear-gradient(to bottom, #1376f8, #194074);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      opacity: 0;
+      transform: scale(0.8); /* Reducimos la escala del botón para que aparezca más suave */
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Añadimos transiciones para la opacidad y escala del botón */
+    }
+  }
+}
+
+.games-cards__container--card:hover .games-cards__container--card-btn{
+  display: flex;
+  justify-content: center;
+  opacity: 1; /* Aumentamos la opacidad del botón al hacer hover */
+  transform: scale(1); /* Restauramos la escala original del botón */
+
+}

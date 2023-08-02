@@ -1,0 +1,68 @@
+.modal-register {
+  background-color: $fifteenth-color;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include from(s_desktop) {
+    max-width: 900px;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  
+  &__heading {
+    background-color: $fifteenth-color;
+    width: 100%;
+    row-gap: 16px;
+
+    &--text {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      color: $sixth-color;
+    }
+
+    &--img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 70px;
+      left: 60px;
+      margin-bottom: 40px;
+
+      img {
+        display: block;
+        max-width: 200px;
+        margin-bottom: 8px;
+      }
+      p {
+        max-width: 300px;
+        text-align: center;
+        color: $sixth-color;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+
+    &--img {
+      position: relative;
+
+      img {
+        display: block;
+        height: 100%;
+      }
+    }
+  }
+
+
+}

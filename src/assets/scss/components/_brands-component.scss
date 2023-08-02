@@ -1,0 +1,19 @@
+.brands {
+  background-color: $thirteenth-color;
+  padding: 32px 0;
+
+  &-content {
+    max-width: 1560px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
